@@ -117,28 +117,16 @@ Borland Museum and unzip it into a temporary directory. Run the INSTALL.EXE
 program and follow the installation instructions.
 
 
+-------------------------------------------------------------------------------
 # Integrating SST with State Machines
 As described in the article, SST-type kernel is ideal for deterministic
 Run-To-Completion (RTC) execution of concurrent state machines. The website
-www.quantum-leaps.com provides an implementation of the RTC kernel, called
-Quantum Kernel (QK) that works exactly like SST and only differs in the way it
+https://www.state-machine.com provides an implementation of the RTC kernel, called
+**QK** ("Quantum Kernel") that works exactly like SST and only differs in the way it
 is integrated with the state-machine event processor (QEP) and the state
-machine framework (QF). All these components are available under the GPL open
-source license.
+machine framework (QF). QK has been ported to many embedded CPUs, such as:
+**ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC, PIC32, etc.
 
 Miro Samek
+
 April 24, 2006
-
-
--------------------------------------------------------------------------------
-
-# Updates
-Since the publication of the "Build a Super-Simple Tasker" article, the
-presented concepts and implementations have been revised, improved and
-expanded in many direcctions. Among others, the SST-like preemptive,
-run-to-completion kernel has been created and is now part of the QP/C and
-QP/C++ Real-Time Embedded Frameworks. This kernel, called **QK** ("Quantum Kernel"),
-has been ported to many embedded CPUs, such as **ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC,
-PIC32, etc. Please see:
-
-https://www.state-machine.com
