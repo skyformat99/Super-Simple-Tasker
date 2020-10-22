@@ -116,17 +116,17 @@ To install Borland Turbo C++ 1.01, download the file TCPP101.ZIP from the
 Borland Museum and unzip it into a temporary directory. Run the INSTALL.EXE
 program and follow the installation instructions.
 
+Miro Samek<br>
+_April 24, 2006_
 
 -------------------------------------------------------------------------------
-# Integrating SST with State Machines
+# Updates and Support for Modern Microcontrollers
 As described in the article, SST-type kernel is ideal for deterministic
 Run-To-Completion (RTC) execution of concurrent state machines. The website
 https://www.state-machine.com provides an implementation of the RTC kernel, called
 **QK** ("Quantum Kernel") that works exactly like SST and only differs in the way it
-is integrated with the state-machine event processor (QEP) and the state
-machine framework (QF). QK has been ported to many embedded CPUs, such as:
-**ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC, PIC32, etc.
+is integrated with the [QP Real-Time Embedded Frameworks (RTEFs)](https://www.state-machine.com/products).
+QK has been ported to many embedded CPUs, such as: **ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC, PIC32, etc.
 
-Miro Samek
-
-April 24, 2006
+<br>
+_October 14, 2011_
