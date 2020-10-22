@@ -2,7 +2,6 @@
 
 
 # Build a Super Simple Tasker
-# Hierarchical State Machines in C/C++
 
 ## Miro Samek and Robert Ward
 ## July, 2006
@@ -16,8 +15,8 @@ magazine in July 2006. This repository contains the article PDF and the updated 
 # Licensing
 The SST source code and examples are released under the terms of the GNU
 General Public License version 2 (GPL) as published by the Free Software
-Foundation and appearing in the file GPL.TXT included in the packaging of this
-file. Please note that GPL Section 2[b] requires that all works based on this
+Foundation and appearing in the file LICENSE included in this repository.
+Please note that GPL Section 2[b] requires that all works based on this
 software must also be made publicly available under the terms of the GPL
 ("Copyleft").
 
@@ -28,9 +27,9 @@ The <sst> code repository the following subdirectories and files:
 ```
 <sst>\
   |
-  +-readme.txt       - this file
+  +-README.md        - this file
   |
-  +-gpl.txt          - the GNU General Public License
+  +-LICENSE          - the GNU General Public License
   |
   +-example\         - subdirectory containing the SST example files
   | |
@@ -138,8 +137,8 @@ Since the publication of the "Build a Super-Simple Tasker" article, the
 presented concepts and implementations have been revised, improved and
 expanded in many direcctions. Among others, the SST-like preemptive,
 run-to-completion kernel has been created and is now part of the QP/C and
-QP/C++ Real-Time Embedded Frameworks. This kernel, calle QK, has been ported
-to many embedded CPUs, such as **ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC,
+QP/C++ Real-Time Embedded Frameworks. This kernel, called **QK** ("Quantum Kernel"),
+has been ported to many embedded CPUs, such as **ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC,
 PIC32, etc. Please see:
 
-https://www.state-machine.com/
+https://www.state-machine.com
