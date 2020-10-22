@@ -8,7 +8,7 @@
 
 ["Build a Super-Simple Tasker"](Super-Simple-Tasker.pdf) was
 a cover story article published originally in
-[Embedded Systems Programming](https://www.embedded.com/build-a-super-simple-tasker)
+[Embedded Systems Design](https://www.embedded.com/build-a-super-simple-tasker)
 magazine in July 2006. This repository contains the article PDF and the updated code.
 
 
@@ -57,19 +57,28 @@ The <sst> code repository the following subdirectories and files:
 ```
 
 # Running the SST Example
-The executable file for the SST example is provided in
-<sst>\example\bin\sst_exa.exe. You can run this executable on any
-Windows-based PC in a DOS-console by simply double-clicking on the executable.
-However, the program takes one command-line argument, which is easiest to
-provide by launching the program from a command prompt.
 
-The command-line argument determines the number of iterations through a delay
-loop peppered throughout the application code. The purpose of this delay is to
-extend the run-to-completion processing (which is really short on the fast
-modern PCs), and thus increase the probability of asynchronous preemptions.
-We’ve been using a typical value of this delay around 10000 on a modern 2GHz
-PC, which corresponds to the following invocation of the SST example
-application:
+![SST Running in DOS Window](img/fig05.gif)
+
+The executable file for the SST example is provided in
+<sst>\example\bin\sst_exa.exe. You can run this executable on a
+Windows-based PC in a DOS emulator (e.g. DOSBox DOS emulator).
+
+> NOTE: The legacy DOS platform has been chosen for demonstrating SST, because
+it still allows programming with interrupts, directly manipulating CPU registers,
+and directly accessing I/O space of the processor (required for writing the EOI
+command to the 8259A interrupt controller). No other modern desktop development
+environment for the commodity PC allows this much so easily. The ubiquitous PC
+running under DOS (or a DOS emulator within any variant of Windows) is capable
+of demonstrating most key embedded features of SST.
+
+The example program takes one command-line argument, which is the number of
+iterations through a delay loop peppered throughout the application code.
+The purpose of this delay is to extend the run-to-completion processing
+(which is really short on the fast modern PCs), and thus increase the probability
+of asynchronous preemptions. We’ve been using a typical value of this delay
+around 10000 on a modern 2GHz PC, which corresponds to the following invocation
+of the SST example application:
 
 `sst_exa.exe 10000`
 
@@ -98,26 +107,18 @@ synchronous preemption does not occur when the keyboard task posts an event to
 the lower-priority tickTaskA().
 
 
-# Borland Turbo C++ 1.01
+# Legacy DOS Compiler
 In order to modify and recompile the example, you need to download and install
-the legacy Turbo C++ 1.01 compiler, which is available for a free download
+a legacy DOS compiler, such as Turbo C++ 1.01, which is available for a free download
 from the Borland Museum at
 http://bdn.borland.com/article/0,1410,21751,00.html.
-
-The legacy DOS platform has been chosen for demonstrating SST because it still
-allows programming with interrupts, directly manipulating CPU registers, and
-directly accessing I/O space of the processor (required for writing the EOI
-command to the 8259A interrupt controller). No other desktop 32-bit
-development environment for the commodity PC allows this much so easily. The
-ubiquitous PC running under DOS (or a DOS console within any variant of
-Windows) is capable of demonstrating most key embedded features of SST.
 
 To install Borland Turbo C++ 1.01, download the file TCPP101.ZIP from the
 Borland Museum and unzip it into a temporary directory. Run the INSTALL.EXE
 program and follow the installation instructions.
 
 Miro Samek<br>
-_April 24, 2006_
+April 24, 2006
 
 -------------------------------------------------------------------------------
 # Updates and Support for Modern Microcontrollers
@@ -129,4 +130,4 @@ is integrated with the [QP Real-Time Embedded Frameworks (RTEFs)](https://www.st
 QK has been ported to many embedded CPUs, such as: **ARM Cortex-M** (M0-M7), MSP430, PIC24/dsPIC, PIC32, etc.
 
 <br>
-_October 14, 2011_
+October 14, 2011
